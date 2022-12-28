@@ -38,11 +38,7 @@ async def rename(bot,update):
 	chat_id = update.message.chat.id
 	id = update.message.reply_to_message_id
 	await update.message.delete()
-	await update.message.reply_text(f"Yangi fayl nomini kiriting.
-
-Video ustiga pechat qo'yayotgan bo'lsangiz fayl nomidan keyin ".mkv" yoki ".mp4" qo'yib yuboring.
-
-Masalan: Qayta nomlash bot.mkv",reply_to_message_id = id,
+	await update.message.reply_text(f"Yangi fayl nomini kiriting.\n\nVideo ustiga pechat qo'yayotgan bo'lsangiz fayl nomidan keyin ".mkv" yoki ".mp4" qo'yib yuboring.\n\nMasalan: Qayta nomlash bot.mkv",reply_to_message_id = id,
 	reply_markup=ForceReply(True) )
 	dateupdate(chat_id,date)
 	
